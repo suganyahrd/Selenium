@@ -5,13 +5,14 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumClassCheckBox {
 
 	public static void main(String[] args) {
-WebDriver driver = new FirefoxDriver();
+WebDriver driver = new ChromeDriver();
 driver.manage().window().maximize();
 driver.get("http://www.tizag.com/htmlT/htmlcheckboxes.php");
 WebElement blockCheck=driver.findElement(By.xpath("(//div[@class='display'])[1]"));
@@ -25,7 +26,7 @@ for (WebElement sport:sports) {
 		sport.click();
 		
 	}
-	//if(s.equalsIgnoreCase("football")) {sport.click();
+	//if(s.equalsIgnoreCase("football")) {sport.clicxk();
 
 	
 	
